@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#F5F5F5"
+    android:gravity="center_horizontal"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="24dp"
+    android:paddingBottom="24dp">
+
+
+    <Button
+        android:id="@+id/btnPickContact"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="Pick Customer" />
+
+    <TextView
+        android:id="@+id/tvSelectedContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:paddingTop="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="12dp"
+        android:text="No contact selected"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+    android:id="@+id/tvPresetType"
+    android:visibility="gone"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingEnd="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:minWidth="120dp"
+        android:hint="Amount"
+        android:inputType="number"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" />
+
+
+    <EditText
+    android:id="@+id/etNote"
+    android:hint="Add a note (optional)"
+    android:inputType="text"
+    android:layout_marginTop="12dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+<Button
+    android:id="@+id/btnPickDate"
+    android:text="Select Date"
+    android:layout_marginTop="16dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+<LinearLayout
+    android:id="@+id/rowTypeTabs"
+    android:orientation="horizontal"
+    android:paddingTop="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btnReceived"
+        android:text="Received"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2E7D32"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="8dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnGiven"
+        android:text="Given"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#C62828"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginEnd="8dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+<CheckBox
+    android:id="@+id/cbNotify"
+    android:text="Notify via SMS"
+    android:checked="true"
+    android:paddingTop="16dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+<Button
+    android:id="@+id/btnSave"
+    android:text="Done"
+    android:layout_marginTop="24dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+</LinearLayout>
